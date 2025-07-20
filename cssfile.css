@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+.right{
+    /* border: 2px solid red; */
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    color: white;
+    padding: 2px 2px;
+}
+
+body{
+    background-color: black;
+}
+
+/* navigation bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* top: 0px; */
+}
+
+#logo{
+    margin: 8px 7px;
+    /* margin: 0%; */
+}
+#logo img{
+    height: 45px;
+    /* margin-left: 10px; */
+    /* margin-top: 3px; */
+    margin: 2px 13px;
+    border-radius: 40px;
+    transition: all 1s ease-in-out .3s;
+   
+}
+#logo img:hover{
+
+    width: 200px;
+    height: 200px;
+    /* margin-top: 400px; */
+}
+#navbar ul{
+    display: flex;
+    
+}
+#navbar::before{
+    content: "";
+    background-color: white;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 19px;
+}
+#navbar ul li a{
+    border-radius: 20px;
+    color: white;
+    display: block;
+    padding: 8px 11px;
+    margin: 13px 19px;
+    text-decoration: none;
+    font-family:  cursive;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 1px;
+    height: 550px;
+    /* width: ; */
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 700px;
+    width: 100%;
+    background: url('footer.jpg') no-repeat center center/cover;
+    opacity: 0.8;
+    animation: slide 20s infinite;
+}
+@keyframes slide{
+    25%{
+        
+        background: url('bh1.jpeg') no-repeat center center/cover;
+        color:black;
+    }
+    50%{
+        background: url('bh4.jpeg') no-repeat center center/cover;
+    }
+    75%{
+        background: url('footer.jpg') no-repeat center center/cover;
+    }
+    100%{
+        background: url('bh7.jpeg') no-repeat center center/cover;
+    }
+}
+/* our Services section */
+.service-container{
+    /* border: 2px solid red; */
+    margin-top: 100px;
+    background-image: url("footer.jpg");
+    background-size: 850px;
+}
+#service{ 
+    margin: 6px;
+    display: flex;
+    color: white;
+    margin-bottom: 15px;
+    /* border: 2px solid white; */
+    border-radius: 20px;
+}
+#service .box{
+    border: 2px solid white;
+    padding: 5px 10px 0px 0px;
+    margin: 40px 30px;
+    /* background-color: #e8c6d8; */
+    border-radius: 20px;
+    background-color: black;
+}
+#service .box img{
+    height: 165px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 3px solid black;
+    
+}
+
+/* Client Section */
+
+#client-section
+{
+    margin-top: 85px;
+    height: 310px;
+}
+#client-section::before
+{
+ content: "";
+ position: absolute;
+ /* background:url('aboutus.jpg') no-repeat center center/cover; */
+ width: 100%;
+ height: 65%;
+ z-index: -1;   
+ opacity: 0.6;
+  
+}
+#Clients img{
+    height: 90px;
+}
+
+#Clients
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-items{
+    padding: 30px;
+}
+#clt img{
+    height: 130px;
+    padding-left: 0%;
+}
+
+/* utility class */
+
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family:  cursive;
+}
+.btn{
+    margin-top: 20px;
+    text-decoration: none;
+}
+.btn a{
+    text-decoration: none;
+}
+.btn a:hover{
+    color: black;
+    background-color: yellow;
+    font-weight: bolder;
+}
+.h-primary{
+    font-size: 3.0rem;
+    /* padding-top: 30px; */
+    padding: 20px;
+   
+    font-family: cursive;
+    align-items: center;
+   
+}
+.h-secondary{
+    color: white;
+    background-color: black;
+    opacity: 0.6;
+    font-size: 2.7rem;
+    padding-top: 15px;
+    font-family: cursive;
+    text-align: center;
+    
+}
+#service .h-third{
+    font-size: 25px;
+    text-align: center;
+}
+.btn a{
+    padding: 7px 40px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 25px -5px;
+    font-size: 15px;
+    border-radius: 30px;
+    /* text-decoration: none; */
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    padding :9px 500px ;
+}
+#cont-box{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    padding-bottom: 34px;
+    border-radius: 10px;
+    color: white;
+}
+#cont-box form{
+    width: 15%;
+    color: rgb(235, 242, 221);
+  
+}
+#cont-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+#cont-box label{
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* Contact Section */
+
+#cont{
+    position: relative;
+    /* border: 2px solid red; */
+}
+#cont::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* background : url('footer.jpg') no-repeat center center/cover; */
+    opacity: 0.7;
+}
+
+.text-center{
+    text-align: center;
+}
+h2{
+    margin-bottom: 10px;
+}
+.common{
+   
+    font-size: 3.0rem;
+    padding: 20px;
+    font-family: cursive;
+    align-items: center;
+    /* padding-top: 1px; */
+    padding-left: 40%;
+    color: rgb(203, 238, 196);
+}
+.common1{
+    font-size: 3.0rem;
+    padding: 20px;
+    font-family: cursive;
+    align-items: center;
+    padding-top: 100px;
+    padding-left: 40%;
+    color: rgb(203, 238, 196);
+}
+.dec{
+    border-radius: 5px;
+}
+#foter{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    margin-top: 110px; 
+    padding: 20px;
+}
+#f1{
+    background-color: black;
+    color: white;
+    padding :9px 430px ;
+}
+#more-content{
+    margin-left: 100px;
+    margin-top: 30px;
+    padding: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    border: 2px solid palevioletred;
+    border-radius: 7px;
+}
+#more-content:hover{
+    color: white;
+    background-color: red;
+}
