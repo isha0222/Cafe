@@ -1,0 +1,147 @@
+<html>
+
+<head>
+    <title>BOOKING
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="cssfile.css"> -->
+    <!-- <link rel="stylesheet" href="sty.css"> -->
+    <style>
+        body {
+            background-image: url(homebooking.jpg);
+            background-size: 1520px;
+            background-repeat: no-repeat;
+        }
+
+        #navbar {
+            /* opacity: 0.8; */
+            height: 80px;
+        }
+
+        .box {
+            margin-top: 20px;
+            padding: 50px;
+            opacity: 0.9;
+        }
+
+        .package {
+            border: 0;
+            background: #191919;
+            display: block;
+            margin-left: 50px;
+            text-align: center;
+            border: 2px solid #3498db;
+            padding: 14px 10px;
+            width: 200px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s;
+            /* opacity: 0.8; */
+        }
+
+        .package:focus {
+            width: 280px;
+            border-color: #2ecc71;
+
+        }
+        .textarea{
+            border: 0;
+            background: #191919;
+            display: block;
+            margin-left: 50px ;
+            text-align: center;
+            border: 2px solid #3498db;
+            padding: 14px 10px;
+            width: 200px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s;
+        }
+        .textarea:focus{
+            width: 280px;
+            border-color: #2ecc71;
+
+        }
+        .DATE{
+            border: 0;
+            background: #191919;
+            display: block;
+            margin-left: 50px ;
+            text-align: center;
+            border: 2px solid #3498db;
+            padding: 14px 10px;
+            width: 200px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s;
+        }
+        /* .DATE:focus{
+            width: 280px;
+            border-color: #2ecc71;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- <nav id="navbar">
+        <div id="logo">
+            <img src="Logo.png" alt="FoodDelivery.com">
+        </div>
+
+        <ul class="navigation">
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="Aboutus.html">About</a></li>
+            <li class="item"><a href="service.html">Service</a></li>
+            <li class="item"><a href="contact.html" target="_blank">Contact Us</a></li>
+            <li class="item"><a href="#">LOG IN</a></li>
+                <li class="item"><a href="#">SIGN UP</a></li> -->
+
+    <!-- </ul>
+        <div class="right">
+            <ul class="ruf">
+                <li class="itm"><a href="log.html" target="_blank"> LOG IN</a>
+                </li>
+                <li class="itm"><a href="sign.html" target="_blank"> SIGN UP</a>
+
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+    <form name=my_form class="box" action="index.html" onsubmit="return func(this)" method="post">
+        <h1>TABLE BOOKING</h1>
+        <input type="text" name="username" id="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Enter Email" required>
+        <input type="text" name="phone" id="phone" placeholder="Mobile no" required>
+        <input type="text" name="people" id="people" placeholder="People">
+        <input type="datetime-local" name="date" id="date" class="DATE"> <br>
+        <textarea placeholder="Suggetion......" name="suggetion" class="textarea"></textarea>
+
+        <!-- <select name="package" id="package" class="package"> -->
+            <!-- <option value="#">package</option>
+            <option value="#">a</option>
+            <option value="#">a</option>
+            <option value="#">a</option>
+        </select>  -->
+        
+        <input type="submit" name="" value="submit">
+    </form> 
+    <!-- <script>
+            function func(){
+                var pass = document.my_form.password.value;
+                var Username = document.my_form.Username.value
+                // var confirm = document.my_form("confirm");
+
+                if(Username.length == 0 || pass.length == 0)
+                {
+                    // document.write("enter valid username");
+                    alert("enter valid information");
+                    return false;
+                }
+            }
+        </script> -->
+</body>
+
+</html>

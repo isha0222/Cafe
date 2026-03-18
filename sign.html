@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="cssfile.css"> -->
+    <!-- <link rel="stylesheet" href="sty.css"> -->
+    <style>
+        body {
+            background-image: url(fo1.jpg);
+            background-size: 1550px;
+            background-repeat: no-repeat;
+        }
+        #navbar{
+            /* opacity: 0.8; */
+            height: 80px;
+        }
+        .box{
+            margin-top: 20px;
+           padding: 80px;
+           opacity: 0.9;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <form name=my_form class="box" action="index.html" onsubmit="return func(this)" method="post">
+        <h1>Sign Up</h1>
+        <input type="text" name="username" id="name" placeholder="Username" required>
+        <input type="text" name="phone" id="phone" placeholder="Mobile no." required>
+        <input type="email" name="email" placeholder="Enter Email" required>
+        <input type="password" name="password" id="pass" placeholder="Password" required>
+        <input type="text" name="confirm" id="confirm" placeholder="Conform password" required>
+        <input type="submit" name="submit" value="submit">
+    </form>
+    <!-- <script>
+            function func(){
+                var pass = document.my_form.password.value;
+                var Username = document.my_form.Username.value
+                // var confirm = document.my_form("confirm");
+
+                if(Username.length == 0 || pass.length == 0)
+                {
+                    // document.write("enter valid username");
+                    alert("enter valid information");
+                    return false;
+                }
+            }
+        </script> -->
+</body>
+
+</html>
